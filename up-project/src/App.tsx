@@ -129,7 +129,7 @@ function App() {
 
       <main className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-          <div className="flex space-x-4 mb-6">
+          <div className="flex space-x-4 mb-6 overflow-x-scroll md:overflow-x-hidden">
             <button
               onClick={() => setActiveTab("report")}
               className={`flex items-center gap-2 px-4 py-2 rounded-md ${
@@ -205,7 +205,7 @@ function App() {
               <h2 className="text-2xl font-semibold mb-6">
                 Chatbot
               </h2>
-              <Chatbot/>
+              <Chatbot anonymousComplaints={anonymousComplaints} />
             </>
           )}
           
